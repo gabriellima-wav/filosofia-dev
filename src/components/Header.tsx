@@ -7,10 +7,10 @@ export default function Header() {
           <a href="#" className="hover:text-emerald-300">
             Início
           </a>
-          <a href="#about" className="hover:text-emerald-300">
+          <a href="sobre" className="hover:text-emerald-300">
             Sobre
           </a>
-          <a href="#contact" className="hover:text-emerald-300">
+          <a href="#contato" className="hover:text-emerald-300">
             Contato
           </a>
         </nav>

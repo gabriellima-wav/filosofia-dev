@@ -1,17 +1,14 @@
-import React from "react";
 import { useNavigate } from "react-router-dom"; // Importando useNavigate
-import Header from "../components/Header";
 
 export default function HomePage() {
   const navigate = useNavigate(); // Função para navegar entre páginas
 
   const handleCardClick = (page: string) => {
-    navigate(`/filosofia/${page}`); // Redireciona para a página de Filosofia específica
+    navigate(`/${page}`); // Redireciona para a página de Filosofia específica
   };
 
   return (
     <>
-      <Header />
       <main className="flex flex-col items-center justify-center min-h-screen p-8">
         <h1 className="text-4xl font-bold mb-4 text-center">
           Bem-vindo ao FilosofiaDev!
@@ -30,7 +27,7 @@ export default function HomePage() {
               backgroundPosition: "center",
               height: "200px",
             }}
-            onClick={() => handleCardClick("antiga")} // Navega para Filosofia Antiga
+            onClick={() => handleCardClick("filosofia-antiga")} // Navega para Filosofia Antiga
           >
             <h2
               className="text-xl font-semibold mb-2"
@@ -47,7 +44,7 @@ export default function HomePage() {
               backgroundPosition: "center",
               height: "200px",
             }}
-            onClick={() => handleCardClick("medieval")} // Navega para Filosofia Medieval
+            onClick={() => handleCardClick("filosofia-medieval")} // Navega para Filosofia Medieval
           >
             <h2
               className="text-xl font-semibold mb-2"
@@ -64,7 +61,7 @@ export default function HomePage() {
               backgroundPosition: "center",
               height: "200px",
             }}
-            onClick={() => handleCardClick("moderna")} // Navega para Filosofia Moderna
+            onClick={() => handleCardClick("filosofia-moderna")} // Navega para Filosofia Moderna
           >
             <h2
               className="text-xl font-semibold mb-2"
@@ -83,7 +80,7 @@ export default function HomePage() {
               backgroundPosition: "center",
               height: "200px",
             }}
-            onClick={() => handleCardClick("contemporanea")} // Navega para Filosofia Contemporânea
+            onClick={() => handleCardClick("filosofia-contemporanea")} // Navega para Filosofia Contemporânea
           >
             <h2
               className="text-xl font-semibold mb-2"

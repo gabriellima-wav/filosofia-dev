@@ -5,6 +5,7 @@ import FilosofiaMedievalPage from "./pages/filosofia/FilosofiaMedievalPage";
 import FilosofiaModernaPage from "./pages/filosofia/FilosofiaModernaPage";
 import FilosofiaContemporaneaPage from "./pages/filosofia/FilosofiaContemporaneaPage";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -12,11 +13,15 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/antiga" element={<FilosofiaAntigaPage />} />
-        <Route path="/medieval" element={<FilosofiaMedievalPage />} />
-        <Route path="/moderna" element={<FilosofiaModernaPage />} />
-        <Route path="/contemporanea" element={<FilosofiaContemporaneaPage />} />
+        <Route path="/filosofia-antiga" element={<FilosofiaAntigaPage />} />
+        <Route path="/filosofia-medieval" element={<FilosofiaMedievalPage />} />
+        <Route path="/filosofia-moderna" element={<FilosofiaModernaPage />} />
+        <Route
+          path="/filosofia-contemporanea"
+          element={<FilosofiaContemporaneaPage />}
+        />
       </Routes>
+      <Footer />
     </Router>
   );
 };

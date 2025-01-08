@@ -6,12 +6,16 @@ import FilosofiaModernaPage from "./pages/filosofia/FilosofiaModernaPage";
 import FilosofiaContemporaneaPage from "./pages/filosofia/FilosofiaContemporaneaPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SobrePage from "./pages/SobrePage";
+import ContatoPage from "./pages/ContatoPage";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Header />
       <Routes>
+        <Route path="/sobre" element={<SobrePage />} />
+        <Route path="/contato" element={<ContatoPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/filosofia-antiga" element={<FilosofiaAntigaPage />} />
         <Route path="/filosofia-medieval" element={<FilosofiaMedievalPage />} />

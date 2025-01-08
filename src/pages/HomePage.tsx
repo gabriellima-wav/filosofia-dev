@@ -11,7 +11,8 @@ export default function HomePage() {
     <>
       <main className="flex flex-col items-center justify-center min-h-screen p-8">
         <h1 className="text-4xl font-bold mb-4 text-center">
-          Bem-vindo ao FilosofiaDev!
+          Bem-vindo ao Filosofia
+          <span className="text-green-900">Dev</span>!
         </h1>
         <p className="text-center mb-8">
           Explore ideias, conceitos e textos que transformaram a história do

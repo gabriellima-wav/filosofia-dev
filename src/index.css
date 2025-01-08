@@ -5,3 +5,11 @@
 html {
   font-family: 'Inter', sans-serif;
 }
+
+.bg-atenas-background {
+  background-image: url('public\atenas.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

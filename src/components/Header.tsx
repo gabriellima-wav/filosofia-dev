@@ -6,13 +6,14 @@ export default function Header() {
     <header className="bg-emerald-700 text-white py-4 px-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-xl font-bold hover:text-emerald-50">
-          FilosofiaDev
+          Filosofia
+          <span className="text-green-900">Dev</span>
         </Link>
-        <nav className="flex gap-4">
-          <a href="sobre" className="hover:text-emerald-300">
+        <nav className="flex gap-4 ml-auto">
+          <a href="sobre" className="text-lg hover:text-emerald-300">
             Sobre
           </a>
-          <a href="contato" className="hover:text-emerald-300">
+          <a href="contato" className="text-lg hover:text-emerald-300">
             Contato
           </a>
         </nav>

@@ -8,7 +8,7 @@ const FilosofiaAntigaPage: React.FC = () => {
       description="A Filosofia Antiga é um período da história da filosofia que se estende desde o século VI a.C. até o século VI d.C. Durante este período, filósofos como Sócrates, Platão e Aristóteles fundaram as bases do pensamento ocidental. A filosofia grega, particularmente, teve um impacto duradouro sobre várias tradições filosóficas, e suas influências podem ser vistas até hoje nas nossas reflexões sobre ética, política e metafísica."
     >
       <div className="mt-8 space-y-4">
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">1- Início da Filosofia</h3>
           <p>
             A Filosofia começou na Grécia antiga com o desenvolvimento do
@@ -16,7 +16,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">2- Pré-Socráticos</h3>
           <p>
             Filósofos como Tales de Mileto e Anaximandro focaram nas explicações
@@ -25,7 +25,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">3- Sócrates</h3>
           <p>
             Sócrates é conhecido por seu método de questionamento, o método
@@ -33,7 +33,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">4- Sofistas</h3>
           <p>
             Os sofistas eram filósofos itinerantes que ensinavam retórica e
@@ -41,7 +41,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">5- Platão</h3>
           <p>
             Platão foi discípulo de Sócrates e fundou a Academia. Seus diálogos
@@ -49,7 +49,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">6- Aristóteles</h3>
           <p>
             Aristóteles, discípulo de Platão, fundou o Liceu e é conhecido por
@@ -57,7 +57,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">7- Epicurismo</h3>
           <p>
             Epicurismo é uma filosofia que prega a busca pelo prazer como bem
@@ -65,7 +65,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">8- Estoicismo</h3>
           <p>
             O estoicismo é uma filosofia que ensina a viver em harmonia com a
@@ -73,7 +73,7 @@ const FilosofiaAntigaPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[50%]">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg hover:scale-105 transition-all w-[75%]">
           <h3 className="text-xl font-bold mb-4">9- Ceticismo</h3>
           <p>
             O ceticismo questiona a possibilidade de conhecimento absoluto,

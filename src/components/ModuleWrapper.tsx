@@ -12,7 +12,7 @@ const ModuleWrapper: React.FC<ModuleWrapperProps> = ({
   children,
 }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <main className="flex-grow p-8">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h1 className="text-3xl font-bold mb-4">{title}</h1>

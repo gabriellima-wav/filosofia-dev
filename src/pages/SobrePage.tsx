@@ -28,6 +28,12 @@ const SobrePage: React.FC = () => {
             profundas, aprender com os grandes filósofos e aplicar esse
             conhecimento na sua vida e na sua carreira.
           </p>
+          <p className="text-lg leading-7 text-gray-800 italic">
+            Vale ressaltar que boa parte do conteúdo presente aqui está sendo
+            embasado no curso "Essência da Filosofia" do Epifania Experiência,
+            que oferece uma visão aprofundada sobre temas filosóficos
+            essenciais.
+          </p>
         </div>
       </div>
     </main>

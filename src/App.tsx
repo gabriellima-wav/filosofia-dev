@@ -8,11 +8,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SobrePage from "./pages/SobrePage";
 import ContatoPage from "./pages/ContatoPage";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Header />
+      <Breadcrumbs />
       <Routes>
         <Route path="/sobre" element={<SobrePage />} />
         <Route path="/contato" element={<ContatoPage />} />

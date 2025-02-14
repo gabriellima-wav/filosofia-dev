@@ -1,26 +1,32 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./pages/ProtectedRoute";
 import HomePage from "./pages/HomePage";
-import FilosofiaAntigaPage from "./pages/filosofia/FilosofiaAntigaPage";
-import FilosofiaMedievalPage from "./pages/filosofia/FilosofiaMedievalPage";
-import FilosofiaModernaPage from "./pages/filosofia/FilosofiaModernaPage";
-import FilosofiaContemporaneaPage from "./pages/filosofia/FilosofiaContemporaneaPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 import SobrePage from "./pages/SobrePage";
 import ContatoPage from "./pages/ContatoPage";
+import FilosofiaAntigaPage from "./pages/filosofia/FilosofiaAntigaPage";
 
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
       <Route path="/sobre" element={<SobrePage />} />
       <Route path="/contato" element={<ContatoPage />} />
-      <Route path="/filosofia-antiga" element={<FilosofiaAntigaPage />} />
-      <Route path="/filosofia-medieval" element={<FilosofiaMedievalPage />} />
-      <Route path="/filosofia-moderna" element={<FilosofiaModernaPage />} />
+
+      {/* Rotas protegidas */}
       <Route
-        path="/filosofia-contemporanea"
-        element={<FilosofiaContemporaneaPage />}
+        path="/filosofia-antiga"
+        element={
+          <ProtectedRoute>
+            <FilosofiaAntigaPage />
+          </ProtectedRoute>
+        }
       />
+
+      {/* Outras rotas que precisam de proteção podem ser adicionadas da mesma forma */}
     </Routes>
   );
 };

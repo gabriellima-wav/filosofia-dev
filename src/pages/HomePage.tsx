@@ -1,10 +1,16 @@
-import { useNavigate } from "react-router-dom"; // Importando useNavigate
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "./AuthContext";
 
 export default function HomePage() {
-  const navigate = useNavigate(); // Função para navegar entre páginas
+  const navigate = useNavigate();
+  const { user } = useAuth();
 
   const handleCardClick = (page: string) => {
-    navigate(`/${page}`); // Redireciona para a página de Filosofia específica
+    if (user) {
+      navigate(`/${page}`);
+    } else {
+      navigate("/login");
+    }
   };
 
   return (
@@ -71,8 +77,6 @@ export default function HomePage() {
               Filosofia Moderna
             </h2>
           </div>
-
-          {/* Card Filosofia Contemporânea com imagem de museu */}
           <div
             className="text-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out w-full sm:w-[400px] md:w-[600px] lg:w-[1000px]"
             style={{

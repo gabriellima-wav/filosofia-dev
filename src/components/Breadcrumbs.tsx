@@ -5,6 +5,8 @@ const Breadcrumbs: React.FC = () => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
 
+  const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
   return (
     <nav aria-label="breadcrumb" className="font-inter p-4">
       <ol className="breadcrumb flex space-x-2">
@@ -15,14 +17,15 @@ const Breadcrumbs: React.FC = () => {
         </li>
         {pathnames.map((value, index) => {
           const path = `/${pathnames.slice(0, index + 1).join("/")}`;
+          const isLast = index === pathnames.length - 1;
           return (
             <li key={index} className="flex items-center">
               <span className="mx-2">/</span>
-              {index === pathnames.length - 1 ? (
-                <span>{value}</span>
+              {isLast ? (
+                <span aria-current="page">{capitalize(value)}</span>
               ) : (
                 <Link to={path} className="text-black hover:text-emerald-800">
-                  {value}
+                  {capitalize(value)}
                 </Link>
               )}
             </li>
